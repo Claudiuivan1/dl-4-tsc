@@ -15,6 +15,7 @@ from utils.constants import ARCHIVE_NAMES
 from utils.constants import ITERATIONS
 from utils.utils import read_all_datasets
 
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 def fit_classifier():
     x_train = datasets_dict[dataset_name][0]
